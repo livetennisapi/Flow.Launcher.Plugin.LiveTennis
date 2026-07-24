@@ -1,0 +1,14 @@
+#$schema: https://www.flowlauncher.com/schemas/settings-template.schema.json
+body:
+  - type: textBlock
+    attributes:
+      description: >-
+        Live Tennis needs a Live Tennis API key. Get a free one (no card,
+        1000 requests/day) at https://livetennisapi.com/subscribe/free and
+        paste it below.
+  - type: passwordBox
+    attributes:
+      name: api_key
+      label: API key
+      description: Your Live Tennis API key (sent as the X-API-Key header).
+      defaultValue: ""
