@@ -1,0 +1,13 @@
+{
+  "$schema": "https://www.flowlauncher.com/schemas/plugin.schema.json",
+  "ID": "122454f3-7f67-441c-b80b-624e45ee745c",
+  "ActionKeyword": "tennis",
+  "Name": "Live Tennis",
+  "Description": "Live tennis scores at a keystroke: point-by-point live matches, set scores and serving indicator, plus player search (ranking, country) from Live Tennis API.",
+  "Author": "livetennisapi",
+  "Version": "1.0.0",
+  "Language": "python",
+  "Website": "https://livetennisapi.com",
+  "IcoPath": "Images/icon.png",
+  "ExecuteFileName": "main.py"
+}
