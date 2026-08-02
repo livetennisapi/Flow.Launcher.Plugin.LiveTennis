@@ -13,7 +13,14 @@ Enter copies the score/player line to the clipboard. The context menu
 
 ## Setup
 
-1. Install the plugin: `pm install Live Tennis` (or from the plugin store).
+1. Install the plugin:
+   - **Plugin store:** pending review
+     ([Flow.Launcher.PluginsManifest PR #722](https://github.com/Flow-Launcher/Flow.Launcher.PluginsManifest/pull/722)).
+     Once merged, `pm install Live Tennis` (or the plugin store UI) will work.
+   - **Manual install (works today):** in Flow, run
+     `pm install https://github.com/livetennisapi/Flow.Launcher.Plugin.LiveTennis/releases/download/v1.0.0/Flow.Launcher.Plugin.LiveTennis.zip`
+     — or download that zip and extract it into
+     `%APPDATA%\FlowLauncher\Plugins\`, then restart Flow.
 2. Get a **free API key** (no card, 1000 requests/day, 30/min) at
    <https://livetennisapi.com/subscribe/free>.
 3. Paste the key in **Flow settings → Plugins → Live Tennis → API key**.
@@ -29,4 +36,4 @@ and 429 responses are shown as readable result rows, never crashes.
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
