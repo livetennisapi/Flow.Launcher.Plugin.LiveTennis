@@ -225,7 +225,7 @@ class LiveTennis(FlowLauncher):
             self._row("Copy to clipboard", text, action=("copy_text", [text])),
             self._row(
                 "Open livetennisapi.com",
-                "Live scores, docs and free API keys",
+                "Live scores and free API keys (docs at docs.livetennisapi.com)",
                 action=("open_url", [SITE]),
             ),
         ]
