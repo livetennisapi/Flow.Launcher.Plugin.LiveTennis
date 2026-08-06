@@ -4,7 +4,7 @@
 `tennis`          -> live matches with set-by-set score and serving hint
 `tennis <player>` -> player search (ranking, country, tour)
 
-Data: Live Tennis API (https://livetennisapi.com), free tier 1000 req/day.
+Data: Live Tennis API (https://livetennisapi.com), free tier 100 req/day.
 """
 
 import sys
@@ -42,7 +42,7 @@ class LiveTennis(FlowLauncher):
         if not key:
             return None, self._row(
                 "Set your Live Tennis API key first",
-                "Free key (no card, 1000 req/day) at livetennisapi.com/subscribe/free "
+                "Free key (no card, 100 req/day) at livetennisapi.com/subscribe/free "
                 "— then paste it in this plugin's settings. Enter opens the signup page.",
                 action=("open_url", [FREE_KEY_URL]),
             )
@@ -68,7 +68,7 @@ class LiveTennis(FlowLauncher):
             if e.code == 429:
                 return None, self._row(
                     "Rate limit reached (429)",
-                    "The free tier allows 30 requests/min and 1000/day — try again in a minute.",
+                    "The free tier allows 30 requests/min and 100/day — try again in a minute.",
                 )
             return None, self._row(
                 "Live Tennis API error (HTTP {})".format(e.code),

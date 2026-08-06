@@ -21,7 +21,7 @@ Enter copies the score/player line to the clipboard. The context menu
      `pm install https://github.com/livetennisapi/Flow.Launcher.Plugin.LiveTennis/releases/download/v1.0.0/Flow.Launcher.Plugin.LiveTennis.zip`
      — or download that zip and extract it into
      `%APPDATA%\FlowLauncher\Plugins\`, then restart Flow.
-2. Get a **free API key** (no card, 1000 requests/day, 30/min) at
+2. Get a **free API key** (no card, 100 requests/day, 30/min) at
    <https://livetennisapi.com/subscribe/free>.
 3. Paste the key in **Flow settings → Plugins → Live Tennis → API key**.
 
