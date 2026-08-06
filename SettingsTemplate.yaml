@@ -4,7 +4,7 @@ body:
     attributes:
       description: >-
         Live Tennis needs a Live Tennis API key. Get a free one (no card,
-        1000 requests/day) at https://livetennisapi.com/subscribe/free and
+        100 requests/day) at https://livetennisapi.com/subscribe/free and
         paste it below.
   - type: passwordBox
     attributes:
