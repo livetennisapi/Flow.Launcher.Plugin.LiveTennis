@@ -15,7 +15,7 @@ by the [Live Tennis API](https://livetennisapi.com).
   [Flow.Launcher.PluginsManifest](https://github.com/Flow-Launcher/Flow.Launcher.PluginsManifest);
   new versions can take a few hours to reach every manifest CDN.
 - **Manual:** in Flow, run
-  `pm install https://github.com/livetennisapi/Flow.Launcher.Plugin.LiveTennis/releases/download/v1.1.0/Flow.Launcher.Plugin.LiveTennis.zip`
+  `pm install https://github.com/livetennisapi/Flow.Launcher.Plugin.LiveTennis/releases/latest/download/Flow.Launcher.Plugin.LiveTennis.zip`
   — or download that zip and extract it into
   `%APPDATA%\FlowLauncher\Plugins\`, then restart Flow.
 
