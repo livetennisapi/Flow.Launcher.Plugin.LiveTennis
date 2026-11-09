@@ -18,14 +18,14 @@ jobs:
       python_ver: 3.11
 
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Set up Python ${{ env.python_ver }}
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: ${{ env.python_ver }}
       - name: get version
         id: version
-        uses: notiz-dev/github-action-json-property@release
+        uses: notiz-dev/github-action-json-property@a5a9c668b16513c737c3e1f8956772c99c73f6e8 # v0.2.0
         with:
           path: 'plugin.json'
           prop_path: 'Version'
@@ -49,7 +49,7 @@ jobs:
           zip -r Flow.Launcher.Plugin.LiveTennis.zip . -x '*.git*' 'tests/*' 'scripts/*' '__pycache__/*' '*.pyc'
       - name: Publish
         if: success() && steps.tagcheck.outputs.exists == 'false'
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@8a0cd651e5b2365bd640854a3fa5dfc70e4875f3 # v3.0.4
         with:
           files: 'Flow.Launcher.Plugin.LiveTennis.zip'
           tag_name: "v${{steps.version.outputs.prop}}"
